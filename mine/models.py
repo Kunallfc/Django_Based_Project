@@ -15,7 +15,7 @@ class MyUser(models.Model):
 
 class RegisterForm(forms.Form):
 	name = forms.CharField(max_length=50, label='Your Name')
-	username = forms.CharField(max_length=20, label='Username')
+	username = forms.CharField(max_length=25, label='Username')
 	password = forms.CharField(widget=forms.PasswordInput(), label='Password')
 	
 
