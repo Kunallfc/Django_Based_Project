@@ -9,7 +9,7 @@ from django import forms
 class MyUser(models.Model):
 	user = models.ForeignKey(User)
 	name = models.CharField(max_length=50, default='')
-	address = models.CharField(max_length=300, default='')
+	address = models.CharField(max_length=350, default='')
 	t = models.IntegerField()
 
 
